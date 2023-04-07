@@ -6,7 +6,7 @@
             <figure>
                 <img width="500" height="400" v-bind:src="subject.image" />
             </figure>
-            <p>Subject: {{ subject.title }}</p>
+            <p>Subject: {{ subject.topic }}</p>
             <p>Location: {{ subject.location }}</p>
             <p>Price: {{ subject.price }}</p>
             <button @click="removeSubject(index)">remove</button>
