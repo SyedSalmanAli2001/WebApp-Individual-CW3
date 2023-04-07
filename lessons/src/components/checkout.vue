@@ -16,7 +16,7 @@
             <input v-model="name" />
             <strong> Address </strong>
             <input v-model="address" />
-            <button> Submit </button>
+            <button @click="submitOrder"> Submit </button>
         </p>
     </div>
 </template>
@@ -34,6 +34,9 @@ export default {
     methods: {
         removeSubject(index) {
             this.$emit("removeSubject", index)
+        },
+        submitOrder(){
+            alert("Order Submitted!")
         }
     }
 }
